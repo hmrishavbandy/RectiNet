@@ -20,6 +20,10 @@ performance on the DocUNet dataset after being trained on just
 8 percent of the data used in previous methods.
 
 ---
+<p align="center">
+  <img src="RectiNet_res.gif" />
+</p>
+
 ![Screenshot](images/readme.png?raw=true "RectiNet")
 
 ### Requirements
@@ -91,6 +95,13 @@ Required Directory Structure:
 ` python3 predict.py -help`
 
 
+### Generating data
+
+   For generating your own dataset, follow [this repository](https://github.com/XiyanLiu/AGUN)
+   
+### Note:
+   Please note that we used Matlab 2018b for implementing SSIM (Structural Similarity Index) and MS-SSIM ( Multi-Scale Structural Similarity Index) values. Matlab 2020a, however, uses a different SSIM implementation. Do take that into consideration while comparing your results with the values in our paper. 
+
 ### Loading pre-trained Model
 
 - Download model weights [here](https://drive.google.com/file/d/1Q_cWtIX-quCizX8huznfcIYJKxCOkTSZ/view?usp=sharing "RectiNet Weights")
@@ -117,5 +128,3 @@ If you use this code please consider citing :
 - [X] Upload pre-trained weights for predictions
 - [ ] Upload Images for Evaluation
 - [ ] Increase code readability
-
-
